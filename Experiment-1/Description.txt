@@ -1,0 +1,30 @@
+This HTML code provides a form which help students in registration 
+it includes - name, email ID and Age
+
+Validation: i have added validation in the form so that the input we get is cleaned and there will be no junk values 
+for example:   required attribute-> this will make sure that no field with empty space gets submitted
+
+               pattern="[A-Za-z/s]+" -> this will make sure that the entered value will only contain A-Z , a-z and white spaces 
+               (+) means that more than one characters can be entered
+
+               min,max attributes -> these attributes in age field will make sure that the input value will be betweet the min and max value
+
+Test Cases:
+    name: charan123   (fail)
+          c@haran     (fail)
+          charan      (pass)
+
+    email: 123456     (fail)
+           qwertvbhj  (fail)
+           charan1223@gmail.com    (pass)
+
+    age: 1234          (fail)
+         0             (fail)
+         23            (pass)
+
+Learning Outcomes:
+      learn how to create and organize form elements like text fields, number inputs, labels, and buttons using semantic HTML
+
+      gain practical knowledge of using built-in HTML attributes like required, pattern, min, max
+
+      effectively using attributes like placeholder and title, improving accessibility and usability
