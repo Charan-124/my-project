@@ -1,18 +1,19 @@
 form{
-    background-color: rgb(129, 236, 227);
-    color: rgb(39, 7, 22);
-    width:200px;
+    background-color: rgb(74, 173, 61);
+    border: 2px solid rgb(179, 8, 8);
+    color: rgb(0, 0, 0);
+    width: 200px;
     height: 300px;
-    border:20px solid rgb(179, 8, 8);
+    border: 20px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 30px;
     margin: 10px 80px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    }
+
     body{
         display: flex;
         flex-direction: column;
-        gap: 50px;
-    }
+        gap : 50px;
+    }}
