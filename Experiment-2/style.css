@@ -5,23 +5,24 @@
     display: flex;
    align-items: center;
    justify-content: center;
-   background-color: rgb(212, 212, 188);
+   background-color: rgb(243, 243, 218);
    margin: 100px auto;
 }
 .inner {
     width: 300px;
     height: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
     border-radius: 10px;
     gap: 10px;
+    box-shadow: 0ch 0ch 10px rgba(0, 0, 0, 0.1);
 }
 .Deposit{
     color: rgb(0, 0, 0);
-    width: 200px;
+    width: 250px;
     height: 35px;
     background-color: red;
     border-radius: 5px;
@@ -30,7 +31,7 @@
 }
 .Withdraw{
     color: rgb(0, 0, 0);
-    width: 200px;
+    width: 250px;
     height: 35px;
     background-color: green;
     border-radius: 5px;
@@ -45,4 +46,24 @@
     color: darkgreen;
     font-weight: 800;
     font-size: 25px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+}
+@media (max-width: 480px) {
+    .buttons{
+       flex-direction: column;
+
+    }
+}
+
+@media (min-width: 481px) {
+    .Deposit, .Withdraw {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
 }

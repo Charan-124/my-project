@@ -1,0 +1,76 @@
+Experiment : Bank Deposit & Withdraw UI using HTML & CSS
+
+HTML STRUCTURE:
+
+In this task, I designed a basic user interface for deposit and withdrawal functionality using HTML.
+The layout is constructed using elements such as <div> and <button>. Each section of the interface is
+assigned a unique class name to facilitate targeted styling with CSS.
+
+Structure Overview (Experiment 2):
+
+- An outer container (outer_div) holds the entire UI layout.
+- Inside it, an inner container (inner_div) contains the key components like:
+  -> Deposit Button
+  -> Withdraw Button
+  -> Input field for withdrawal amount
+
+This forms the foundational structure. Once completed, CSS is applied to style and align the components.
+
+CSS STYLING:
+
+CSS (Cascading Style Sheets) is used to visually enhance the HTML by adding colors, spacing, and layouts.
+
+Different Ways to Use CSS:
+
+1. Inline CSS    : Styles are added directly within an HTML element.
+2. Internal CSS  : A <style> tag in the HTML file defines the styling rules.
+3. External CSS  : CSS rules are kept in a separate file and linked to the HTML via a <link> tag.
+
+Basic CSS Syntax:
+Example:
+selector {
+    property: value;
+}
+
+e.g.
+body {
+    background-color: yellow;
+}
+
+CSS Concepts Applied in This Project:
+
+- Box Model:
+  Helps understand spacing around elements through:
+     Padding - Space between content and its border
+     Margin  - Space between elements/containers
+
+- Flexbox Layout:
+  Utilized for arranging elements in rows or columns.
+  Example:
+  display: flex;
+  flex-direction: row;   for horizontal alignment
+  flex-direction: column;  for vertical alignment
+
+- Responsive Design:
+  The layout adapts to various screen sizes using media queries.
+  Example:
+  @media (max-width: 100px) {
+    
+  }
+
+CSS Properties Used:
+
+- background-color : Sets background shade
+- color            : Modifies text color
+- justify-content  : Aligns flex content
+- border           : Defines container boundaries
+- border-radius    : Rounds element corners
+- display          : Determines layout type (e.g., flex)
+
+LEARNING OUTCOMES:
+
+1 Understood the usage and purpose of class attributes in HTML
+2 Learned how Flexbox helps in aligning elements effectively
+3 Practiced styling components by targeting class selectors in CSS
+4 Gained knowledge of the CSS Box Model and its components
+5 Discovered how to build responsive designs using media queries
