@@ -1,0 +1,41 @@
+Experiment-3
+
+Admin Dashboard with grid display and theme switch using HTML and CSS 
+
+in this experiment I have created an Admin Dashboard using grid display and checkbox for theme switching with CSS and HTML
+
+key features:
+1) :root
+:root is a special CSS selector that targets the very element of the HTML.
+
+In our CSS, it’s used to define CSS custom properties (variables) for colors like --header-bg-color, --main-bg-color, etc
+This creates a reusable value that can be applied anywhere in your styles using variables
+
+2) input:checked ~ .container 
+This is a CSS sibling selector combined with a state selector:
+
+input:checked targets the <input> when it’s checked (like a checkbox or radio button).
+
+~ .container selects the .container element that comes after the input in the HTML structure.
+
+In your CSS, when the hidden checkbox with ID theme is checked, it updates the variables to dark theme values.
+
+This creates a pure CSS theme toggle without JavaScript.
+
+3) grid-template-columns defines two columns:
+
+First column = fixed 150px 
+Second column = automatically adjust rest area 
+
+4) grid-template-rows defines three rows:
+
+Row 1 = 70px (header)
+Row 2 = auto (content area)
+Row 3 = 60px (footer)
+
+Learning Outcomes:
+
+1 Understand and Use CSS Variables
+2 Apply the :root Selector Effectively
+3 Implement Theme Switching Using Pure CSS
+4 use of grid display
