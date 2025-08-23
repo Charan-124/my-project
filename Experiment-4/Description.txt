@@ -1,0 +1,39 @@
+-----Live Character Counter
+This small project is a simple web application that counts the number of characters a user types into a text box and displays the result in real time. The idea behind it is to demonstrate how JavaScript variables can be used to interact with HTML elements and update content instantly, without needing to reload the page.
+
+--JavaScript 
+At the heart of this project is a short JavaScript function called showcount(), which is triggered every time the user types something in the textarea (because of the oninput attribute).
+Inside this function, I have used three important variables:
+
+-const textarea
+This variable is connected to the <textarea> element through document.getElementById("inputarea").
+It lets JavaScript read whatever the user is typing into the text box.
+
+-const Count
+This variable calculates the length of the text typed inside the textarea by using .value.length.
+For example, if I type “Hello”, the length will be 5, and that number gets stored inside this variable.
+
+-const charcount
+This variable refers to the <span> element with the id "charcount".
+By updating the .textContent of this element, the number inside the span changes every time a new character is typed.
+
+Finally, the line charcount.textContent = Count; updates the character count on the screen. This is what makes the application “live” — the numbers change instantly without needing a refresh.
+
+I chose const for all the variables because these references don’t need to be reassigned; they stay constant throughout the program. This is a good practice in JavaScript to make the code more secure and predictable.
+
+--HTML
+The <textarea> element provides a box where users can type text.
+The <span id="charcount">0</span> is where the character count is shown, starting from zero.
+A container <div> wraps everything together and gives the page a clean layout.
+The oninput="showcount()" inside the textarea ensures that the function is called automatically whenever the user types.
+
+-- CSS
+.container adds padding, a border, rounded corners, and a light background, which makes the app look like a polished box in the center of the page.
+The textarea is styled to stretch across the width of the container, with enough height and padding so the user can type comfortably.
+The #charcount span is made bold, so the character count stands out clearly.
+
+--Learning Outcomes
+Understood how to declare and use JavaScript variables to store and update values.
+Learned how to use document.getElementById() to connect JavaScript with HTML elements
+Practiced using event handling (oninput) to trigger functions whenever the user types
+Gained experience in real-time DOM manipulation by updating text content instantly.
