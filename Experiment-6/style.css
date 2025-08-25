@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.drawing-area {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    background: #d5fcf5;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    padding: 20px;
+    border: 3px solid black;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
