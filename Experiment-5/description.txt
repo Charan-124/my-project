@@ -1,0 +1,42 @@
+-----Product List Filter
+This project is a simple web application that displays a list of products and allows users to filter them by category using a dropdown menu. The goal is to demonstrate how JavaScript can interact with HTML elements through attributes like data-category and update the page instantly, without requiring a reload.
+
+--JavaScript
+The main functionality is handled by a short JavaScript script that listens for changes in the dropdown (select#category) and updates the product list accordingly.
+Inside the script, I have used two important parts:
+
+const categorySelect
+This variable is linked to the <select> element using document.getElementById("category").
+It listens for changes in the dropdown when the user selects a category.
+
+const products
+This variable stores all <li> items inside the #product-list using document.querySelectorAll(). Each <li> has a data-category attribute that tells JavaScript which category it belongs to (e.g., clothing, electronics, books).
+When the user changes the dropdown, an addEventListener("change", …) is triggered. Inside it:
+JavaScript reads the selected category.
+It loops through each product and checks its data-category.
+If the category matches or the option is "all", the product’s style.display is set to "block".
+Otherwise, the product is hidden with "none".
+This is what makes the filter interactive — only the matching products remain visible.
+
+--HTML
+The HTML structure contains:
+A heading <h2> with the title Product List.
+A dropdown <select id="category"> with options: All, Clothing, Electronics, Books.
+An unordered list <ul id="product-list"> where each product is an <li> with a data-category attribute, for example:
+
+<li data-category="clothing">T-Shirt</li>.
+This data-category attribute is the key connection between the dropdown and the list items.
+
+--CSS
+The CSS styles improve readability and give the app a clean design:
+.container centers the content with padding, margin, border, and a light background.
+h2 adds spacing below the heading.
+select is styled with padding and margin for better usability.
+ul li items have a light background, margin, padding, and rounded corners so each product stands out clearly.
+
+--Learning Outcomes
+Learned how to use data-category attributes in HTML to organize data.
+Practiced connecting JavaScript with HTML using document.getElementById() and querySelectorAll().
+Understood how to use addEventListener("change", …) to respond to user actions.
+Gained experience in real-time DOM manipulation by showing and hiding elements dynamically.
+Improved CSS skills for styling containers, dropdowns, and list items.

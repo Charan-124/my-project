@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #fff;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
