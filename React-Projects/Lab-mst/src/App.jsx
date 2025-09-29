@@ -3,9 +3,9 @@ import EmployeeList from "./EmployeeList";
 
 function App() {
   const [employees, setEmployees] = useState([
-    { id: 1, name: "John Doe", designation: "Software Engineer" },
-    { id: 2, name: "Jane Smith", designation: "Product Manager" },
-    { id: 3, name: "Mike Johnson", designation: "Designer" },
+    { id: 1, name: "Sandhu", designation: "Software Engineer" },
+    { id: 2, name: "Waseer", designation: "Product Manager" },
+    { id: 3, name: "Rupal", designation: "Designer" },
   ]);
 
   const handleDelete = (id) => {
